@@ -1,0 +1,9 @@
+						HOW TO INCLUDE LIBRARY IN QT APPLICATION
+=============================================================================================
+Ex: Include quazip and zlib to mangage zip file
+In .pro file, you must add:
+	1. INCLUDEPATH += $${Dir_of_header_file}
+	2. 
+		2.1. With unix LIBS += -L$${Dir_of_lib} -lz, -lz is add zlib, may change as the case
+		2.2. With win  LIBS += "$${Dir_of_lib}/name_of_lib.dll"
+	3. Must add cpp, c and h file in SOURCES and HEADERS to can build on cross platform.
